@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServerTut", "SocketTu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClientTut", "SocketClientTut\SocketClientTut.csproj", "{7CD36DF4-C298-4D6F-87F7-EA023277B448}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServerAsync", "SocketServerAsync\SocketServerAsync.csproj", "{188D3FBD-0C62-4CBC-89DB-81E6DE74B383}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,6 +21,10 @@ Global
 		{7CD36DF4-C298-4D6F-87F7-EA023277B448}.Debug|x86.Build.0 = Debug|x86
 		{7CD36DF4-C298-4D6F-87F7-EA023277B448}.Release|x86.ActiveCfg = Release|x86
 		{7CD36DF4-C298-4D6F-87F7-EA023277B448}.Release|x86.Build.0 = Release|x86
+		{188D3FBD-0C62-4CBC-89DB-81E6DE74B383}.Debug|x86.ActiveCfg = Debug|x86
+		{188D3FBD-0C62-4CBC-89DB-81E6DE74B383}.Debug|x86.Build.0 = Debug|x86
+		{188D3FBD-0C62-4CBC-89DB-81E6DE74B383}.Release|x86.ActiveCfg = Release|x86
+		{188D3FBD-0C62-4CBC-89DB-81E6DE74B383}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
