@@ -28,7 +28,7 @@ namespace SocketClientTut
                 socket.Connect(ipe);
 
                 string str = Console.ReadLine();
-                byte[] strEncoded = Encoding.Unicode.GetBytes(str);
+                byte[] strEncoded = Encoding.ASCII.GetBytes(str);
                 int bytesend = socket.Send(strEncoded);
 
                 Console.WriteLine("Byte send {0}", bytesend);
@@ -39,7 +39,7 @@ namespace SocketClientTut
                 {
                     byte[] bytes = new byte[1024];
                     int bytesRec = socket.Receive(bytes);
-                    data += Encoding.Unicode.GetString(bytes, 0, bytesRec);
+                    data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
 
                     if (data.IndexOf("<EOF>") > -1)
                     {
@@ -60,7 +60,7 @@ namespace SocketClientTut
             }
             catch (SocketException se)
             {
-                Console.WriteLine("SocketException : {0}", se.ToString());
+                Console.WriteLine("SocketException Code : {0}, ErrorMsg : {1}", se.ErrorCode, se.Message);
             }
             catch (Exception e)
             {
